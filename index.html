@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mary Bowers">
+    <title>Form Activity - GIT414</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Form Activity - GIT414</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Coding Semantic and Accessible Forms!</h2>
+        <p>Today we'll be focusing on coding a form that is accessible and semantic...</p>
+        
+        <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+            <!-- Full Name -->
+            <label for="full-name">Full Name <span class="required">*</span></label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <!-- Email -->
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+
+            <!-- Preferred Contact Method -->
+            <fieldset>
+                <legend>Preferred Method of Contact</legend>
+                <label for="contact-email">
+                    <input type="radio" id="contact-email" name="contact-method" value="email" required> Email
+                </label>
+                <label for="contact-phone">
+                    <input type="radio" id="contact-phone" name="contact-method" value="phone"> Phone
+                </label>
+            </fieldset>
+
+            <!-- State of Residence -->
+            <label for="state">State of Residence <span class="required">*</span></label>
+            <select id="state" name="state" required>
+                <option value="" disabled selected>Select your state</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <!-- Add all other states here -->
+                <option value="WY">Wyoming</option>
+            </select>
+
+            <!-- Comments -->
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright © 2021 - GIT414</p>
+    </footer>
+</body>
+</html>
